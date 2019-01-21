@@ -1,0 +1,9 @@
+---
+spring:
+  application:
+    name: SentenceServer
+  cloud:
+    config: 
+      uri: http://config.responsible-nrg.com
+  profiles:
+    active: sentence
