@@ -16,13 +16,13 @@ import com.responsible_nrg.service.SentenceService;
 public class SentenceController {
 
 	@Autowired 
-	SentenceService sentenceService;
+	private SentenceService sentenceService;
 
 
 	/**
 	 * Display a small list of Sentences to the caller:
 	 */
-	@GetMapping("/sentence")
+	@GetMapping({"/", "/sentence"})
 	public @ResponseBody String getSentences() {
 		return 
 				"<h3>Some Sentences</h3><br/>" +	  
