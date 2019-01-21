@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.responsible_nrg.domain.Word;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 @FeignClient(EurekaClientID.ARTICLE)
 public interface ArticleClient {
 	@RequestMapping(method = RequestMethod.GET, value = "/")

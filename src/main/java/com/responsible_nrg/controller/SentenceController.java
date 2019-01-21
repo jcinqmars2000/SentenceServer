@@ -7,12 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.responsible_nrg.service.SentenceService;
+import org.springframework.web.bind.annotation.RestController;
 
 
-
-
-
-@Controller
+@RestController
 public class SentenceController {
 
 	@Autowired 

@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.responsible_nrg.domain.Word;
+import org.springframework.web.bind.annotation.RestController;
 
 @FeignClient(EurekaClientID.NOUN)
 public interface NounClient {
